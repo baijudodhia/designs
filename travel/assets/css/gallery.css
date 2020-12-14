@@ -1,0 +1,17 @@
+.col-md-6 img {
+  filter: brightness(0.7);
+}
+.col-md-6 img:hover {
+  filter: brightness(1);
+}
+#gallery_heading:after {
+  content: "";
+  width: 75px;
+  height: 5px;
+  background-color: orange;
+  left: 0;
+  margin: 0px auto;
+  position: relative;
+  display: block;
+  top: 5px;
+}

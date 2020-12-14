@@ -1,0 +1,4 @@
+#mainmenu .card:hover {
+  background-color: orange;
+  color: white;
+}

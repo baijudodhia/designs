@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Website</title>
+    <meta name="robots" content="index, follow">
+
+    <link rel="shortcut icon" href="./assets/img/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+</head>
+
+<body>
+
+    <div id="navigation"></div>
+
+    <div class="wrapper text-white bg-dark" style="height:100vh!important;">
+        <div id="carouselExampleCaptions" class="carousel slide h-100" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <picture class="d-block w-100 h-100">
+                        <source media="(max-width:360px)" srcset="https://source.unsplash.com/360x900/?travel,nature">
+                        <source media="(max-width:768px)" srcset="https://source.unsplash.com/768x900/?travel,nature">
+                        <source media="(max-width:1024px)" srcset="https://source.unsplash.com/1024x900/?travel,nature">
+                        <img src="https://source.unsplash.com/1600x900/?travel,nature" alt="Pleasant Nature"
+                            style="width:100%;height:100%">
+                    </picture>
+                    <img alt="travel-website-img" src="https://source.unsplash.com/1600x900/?travel,nature"
+                        class="d-block w-100 h-100">
+                    <div class="carousel-caption d-flex flex-column display-4 text-left">
+                        <div class="mt-4 flex-grow-1">
+                            <p>Pleasant<br />Nature</p>
+                            <a href="./booking.html" class="btn btn-warning shadow-lg rounded-pill text-white py-2 px-3"
+                                style=" text-shadow: 0px 0px 5px #000;">Book
+                                Now</a>
+                        </div>
+                        <div class="mx-auto">
+                            <a href="#services" class="text-center"><img alt="travel-website-img" class="gotoservices"
+                                    src="./assets/img/icons/global/downarrowlight.png" style="max-width:24px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <picture class="d-block w-100 h-100">
+                        <source media="(max-width:360px)" srcset="https://source.unsplash.com/360x900/?scenary,nature">
+                        <source media="(max-width:768px)" srcset="https://source.unsplash.com/768x900/?scenary,nature">
+                        <source media="(max-width:1024px)"
+                            srcset="https://source.unsplash.com/1024x900/?scenary,nature">
+                        <img src="https://source.unsplash.com/1600x900/?scenary,nature" alt="Awesome Scenary"
+                            style="width:100%;height:100%">
+                    </picture>
+                    <img alt="travel-website-img" src="https://source.unsplash.com/1600x900/?scenary,nature"
+                        class="d-block w-100 h-100">
+                    <div class="carousel-caption d-flex flex-column display-4 text-left">
+                        <div class="mt-4 flex-grow-1">
+                            <p>Awesome<br />Scenary</p>
+                            <a href="./booking.html" class="btn btn-warning shadow-lg rounded-pill text-white py-2 px-3"
+                                style=" text-shadow: 0px 0px 5px #000;">Book
+                                Now</a>
+                        </div>
+                        <div class="mx-auto">
+                            <a href="#services" class="text-center"><img alt="travel-website-img" class="gotoservices"
+                                    src="./assets/img/icons/global/downarrowlight.png" style="max-width:24px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <picture class="d-block w-100 h-100">
+                        <source media="(max-width:360px)"
+                            srcset="https://source.unsplash.com/360x900/?restuarant,dining">
+                        <source media="(max-width:768px)"
+                            srcset="https://source.unsplash.com/768x900/?restuarant,dining">
+                        <source media="(max-width:1024px)"
+                            srcset="https://source.unsplash.com/1024x900/?restuarant,dining">
+                        <img src="https://source.unsplash.com/1600x900/?restuarant,dining" alt="Relax Dining"
+                            style="width:100%;height:100%">
+                    </picture>
+                    <img alt="travel-website-img" src="https://source.unsplash.com/1600x900/?restuarant,dining"
+                        class="d-block w-100 h-100">
+                    <div class="carousel-caption d-flex flex-column display-4 text-left">
+                        <div class="mt-4 flex-grow-1">
+                            <p>Relax<br />Dining</p>
+                            <a href="./booking.html" class="btn btn-warning shadow-lg rounded-pill text-white py-2 px-3"
+                                style=" text-shadow: 0px 0px 5px #000;">Book
+                                Now</a>
+                        </div>
+                        <div class="mx-auto">
+                            <a href="#services" class="text-center"><img alt="travel-website-img" class="gotoservices"
+                                    src="./assets/img/icons/global/downarrowlight.png" style="max-width:24px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <picture class="d-block w-100 h-100">
+                        <source media="(max-width:360px)" srcset="https://source.unsplash.com/360x900/?discover">
+                        <source media="(max-width:768px)" srcset="https://source.unsplash.com/768x900/?discover">
+                        <source media="(max-width:1024px)" srcset="https://source.unsplash.com/1024x900/?discover">
+                        <img src="https://source.unsplash.com/1600x900/?discover" alt="Relax Dining"
+                            style="width:100%;height:100%">
+                    </picture>
+                    <img alt="travel-website-img" src="https://source.unsplash.com/1600x900/?discover"
+                        class="d-block w-100 h-100">
+                    <div class="carousel-caption d-flex flex-column display-4 text-left">
+                        <div class="mt-4 flex-grow-1">
+                            <p>Discover<br />Yourself</p>
+                            <a href="./booking.html" class="btn btn-warning shadow-lg rounded-pill text-white py-2 px-3"
+                                style=" text-shadow: 0px 0px 5px #000;">Book
+                                Now</a>
+                        </div>
+                        <div class="mx-auto">
+                            <a href="#services" class="text-center"><img alt="travel-website-img" class="gotoservices"
+                                    src="./assets/img/icons/global/downarrowlight.png" style="max-width:24px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="services">
+        <div class="h2 text-center mt-5 my-3">
+            <span id="services_heading">
+                Our Services
+            </span>
+        </div>
+        <div class="row">
+            <div class="col-md-4 my-3">
+                <div class="card shadow-lg border-0 h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title d-flex flex-row">
+                            <div>
+                                <img alt="travel-website-img" src="./assets/img/icons/homepage/bedroom.png"
+                                    style="width:30px;margin-right:15px" />
+                            </div>
+                            <div>
+                                <span style="font-size:20px;">Master Bedrooms</span>
+                            </div>
+                        </div>
+                        <div class="card-text flex-grow-1">
+                            <p class="p">Our bedrooms have the best amenities</p>
+                            <p>We understand how important a good night's sleep can be to our guests. We know
+                                you want to feel relaxed and rejuvenated and our team works hard to ensure that.</p>
+                        </div>
+                        <div>
+                            <p class="m-0"><a href="./booking.html"
+                                    class="btn btn-outline-primary btn-sm py-2 px-3">Book
+                                    Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+                <div class="card shadow-lg border-0 h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title d-flex flex-row">
+                            <div>
+                                <img alt="travel-website-img" src="./assets/img/icons/homepage/breakfast.png"
+                                    style="width:30px;margin-right:15px" />
+                            </div>
+                            <div>
+                                <span style="font-size:20px;">Breakfast Buffet</span>
+                            </div>
+                        </div>
+                        <div class="card-text flex-grow-1">
+                            <p>The Daily International Breakfast Buffet</p>
+                            <p>Provides a vast range of your morning favourites from delicious Cheese, Waffles,
+                                Croissants, Muffins, Cakes, Yogurts, Cereal, Fruits, Variety of Fruit
+                                Juices and much more.</p>
+                        </div>
+                        <div>
+                            <p class="m-0"><a href="./booking.html"
+                                    class="btn btn-outline-primary btn-sm py-2 px-3">Book
+                                    Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+                <div class="card shadow-lg border-0 h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title d-flex flex-row">
+                            <div>
+                                <img alt="travel-website-img" src="./assets/img/icons/homepage/transport.png"
+                                    style="width:30px;margin-right:15px" />
+                            </div>
+                            <div>
+                                <span style="font-size:20px;">Transport Service</span>
+                            </div>
+                        </div>
+                        <div class="card-text flex-grow-1">
+                            <p>Feasible Transport Services</p>
+                            <p>Book from a wide range of vehicles like cars, mini buses, bikes and scooters. Even get a
+                                driver for you to not worry an enjoy your outing around.</p>
+                        </div>
+                        <div>
+                            <p class="m-0"><a href="./booking.html"
+                                    class="btn btn-outline-primary btn-sm py-2 px-3">Book
+                                    Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 my-3">
+                <div class="card shadow-lg border-0 h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title d-flex flex-row">
+                            <div>
+                                <img alt="travel-website-img" src="./assets/img/icons/homepage/reception.png"
+                                    style="width:30px;margin-right:15px" />
+                            </div>
+                            <div>
+                                <span style="font-size:20px;">Reception</span>
+                            </div>
+                        </div>
+                        <div class="card-text flex-grow-1">
+                            <p>Kindly Reception</p>
+                            <p>24/7 Help available at the reception. Ask for any type of the help and get it solved in
+                                no
+                                time.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="m-0"><a href="./booking.html"
+                                    class="btn btn-outline-primary btn-sm py-2 px-3">Book
+                                    Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+                <div class="card shadow-lg border-0 h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title d-flex flex-row">
+                            <div>
+                                <img alt="travel-website-img" src="./assets/img/icons/homepage/scenery.png"
+                                    style="width:30px;margin-right:15px" />
+                            </div>
+                            <div>
+                                <span style="font-size:20px;">Nature View</span>
+                            </div>
+                        </div>
+                        <div class="card-text flex-grow-1">
+                            <p>Awesome view whole day</p>
+                            <p>Get mesmerising and stunning view of the mountains and the himalayas from any of the
+                                balcony.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="m-0"><a href="./booking.html"
+                                    class="btn btn-outline-primary btn-sm py-2 px-3">Book
+                                    Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+                <div class="card shadow-lg border-0 h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title d-flex flex-row">
+                            <div>
+                                <img alt="travel-website-img" src="./assets/img/icons/homepage/pool.png"
+                                    style="width:30px;margin-right:15px" />
+                            </div>
+                            <div>
+                                <span style="font-size:20px;">Huge Pool</span>
+                            </div>
+                        </div>
+                        <div class="card-text flex-grow-1">
+                            <p>Huge Pool to Relax</p>
+                            <p>Huge Pools to relax, chill and play the games with kids.</p>
+                        </div>
+                        <div>
+                            <p class="m-0"><a href="./booking.html"
+                                    class="btn btn-outline-primary btn-sm py-2 px-3">Book
+                                    Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 my-3">
+                <div class="card shadow-lg border-0 h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title d-flex flex-row">
+                            <div>
+                                <img alt="travel-website-img" src="./assets/img/icons/homepage/freewifi.png"
+                                    style="width:30px;margin-right:15px" />
+                            </div>
+                            <div>
+                                <span style="font-size:20px;">Free WiFi</span>
+                            </div>
+                        </div>
+                        <div class="card-text flex-grow-1">
+                            <p>The necessity now-a-days</p>
+                            <p>We provide high speed internet connectivity round the clock. The network is available in
+                                every corner of the villa. Stay connected with your family and friends and share your
+                                happy
+                                moments.</p>
+                        </div>
+                        <div>
+                            <p class="m-0"><a href="./booking.html"
+                                    class="btn btn-outline-primary btn-sm py-2 px-3">Book
+                                    Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+                <div class="card shadow-lg border-0 h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title d-flex flex-row">
+                            <div>
+                                <img alt="travel-website-img" src="./assets/img/icons/homepage/restobar.png"
+                                    style="width:30px;margin-right:15px" />
+                            </div>
+                            <div>
+                                <span style="font-size:20px;">Restaurant</span>
+                            </div>
+                        </div>
+                        <div class="card-text flex-grow-1">
+                            <p>Family Restaurant & Party Area</p>
+                            <p>Eat, Drink and Party! Enjoy to the fullest with the hygenic food, drinks, desserts.
+                                Awesome
+                                party
+                                environment with huge hall.</p>
+                        </div>
+                        <div>
+                            <p class="mb-0 mt-auto"><a href="./booking.html"
+                                    class="btn btn-outline-primary btn-sm py-2 px-3">Book
+                                    Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr class="my-5" />
+    </div>
+
+    <div class="container pb-3" id="home-rooms">
+        <div class="h2 text-center mt-5 my-3">
+            <span id="home-rooms_heading">Rooms Available</span>
+        </div>
+        <div class="home-rooms mt-2 mb-4">
+            <div class="col-md-4 py-2">
+                <div class="card shadow border-0 h-100 mx-auto" style="width: 18rem;">
+                    <img alt="travel-website-img" src="./assets/img/rooms/superdeluxe_1.jpg" class="card-img-top"
+                        style="height:200px!important" />
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title mb-1 pb-1 text-center border-bottom" style="font-size:20px;">Super Deluxe
+                            Room</div>
+                        <div class="card-text py-2 flex-grow-1">
+                            <p class="p mb-1">✔&nbsp;&nbsp;Perfect for traveling couples</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Breakfast included</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;A/C & Hot Water</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Nature view balcony</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Free WiFi</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Free Transport</p>
+                        </div>
+                        <div>
+                            <a href="./booking.html" class="btn btn-outline-primary btn-sm mt-1">Reserve Room</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-2">
+                <div class="card shadow border-0 h-100 mx-auto" style="width: 18rem;">
+                    <img alt="travel-website-img" src="./assets/img/rooms/deluxe_1.jpg" class="card-img-top"
+                        style="height:200px!important" />
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title mb-1 pb-1 text-center border-bottom" style="font-size:20px;">Deluxe Room
+                        </div>
+                        <div class="card-text py-2 flex-grow-1">
+                            <p class="p mb-1">✔&nbsp;&nbsp;Perfect for traveling couples</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Breakfast included</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;A/C & Hot Water</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Nature view balcony</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Free WiFi</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Free Transport</p>
+                        </div>
+                        <div>
+                            <a href="./booking.html" class="btn btn-outline-primary btn-sm mt-1">Reserve Room</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-2">
+                <div class="card shadow border-0 h-100 mx-auto" style="width: 18rem;">
+                    <img alt="travel-website-img" src="./assets/img/rooms/triple_1.jpg" class="card-img-top"
+                        style="height:200px!important" />
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title mb-1 pb-1 text-center border-bottom" style="font-size:20px;">Triple Bed
+                            Room</div>
+                        <div class="card-text py-2 flex-grow-1">
+                            <p class="p mb-1">✔&nbsp;&nbsp;Perfect for traveling couples</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Breakfast included</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;A/C & Hot Water</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Nature view balcony</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Free WiFi</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Free Transport</p>
+                        </div>
+                        <div>
+                            <a href="./booking.html" class="btn btn-outline-primary btn-sm mt-1">Reserve Room</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-2">
+                <div class="card shadow border-0 h-100 mx-auto" style="width: 18rem;">
+                    <img alt="travel-website-img" src="./assets/img/rooms/twin_1.jpg" class="card-img-top"
+                        style="height:200px!important" />
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title mb-1 pb-1 text-center border-bottom" style="font-size:20px;">Twin Bed
+                            Room</div>
+                        <div class="card-text py-2 flex-grow-1">
+                            <p class="p mb-1">✔&nbsp;&nbsp;Perfect for traveling couples</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Breakfast included</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;A/C & Hot Water</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Nature view balcony</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Free WiFi</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Free Transport</p>
+                        </div>
+                        <div>
+                            <a href="./booking.html" class="btn btn-outline-primary btn-sm mt-1">Reserve Room</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-2">
+                <div class="card shadow border-0 h-100 mx-auto" style="width: 18rem;">
+                    <img alt="travel-website-img" src="./assets/img/rooms/double_1.jpg" class="card-img-top"
+                        style="height:200px!important" />
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title mb-1 pb-1 text-center border-bottom" style="font-size:20px;">Double Bed
+                            Room</div>
+                        <div class="card-text py-2 flex-grow-1">
+                            <p class="p mb-1">✔&nbsp;&nbsp;Perfect for traveling couples</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Breakfast included</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;A/C & Hot Water</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Nature view balcony</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Free WiFi</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Free Transport</p>
+                        </div>
+                        <div>
+                            <a href="./booking.html" class="btn btn-outline-primary btn-sm mt-1">Reserve Room</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-2">
+                <div class="card shadow border-0 h-100 mx-auto" style="width: 18rem;">
+                    <img alt="travel-website-img" src="./assets/img/rooms/single_1.jpg" class="card-img-top"
+                        style="height:200px!important" />
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title mb-1 pb-1 text-center border-bottom" style="font-size:20px;">Single Bed
+                            Room</div>
+                        <div class="card-text py-2 flex-grow-1">
+                            <p class="p mb-1">✔&nbsp;&nbsp;Perfect for traveling couples</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Breakfast included</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;A/C & Hot Water</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Nature view balcony</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Free WiFi</p>
+                            <p class="p mb-1">✔&nbsp;&nbsp;Free Transport</p>
+                        </div>
+                        <div>
+                            <a href="./booking.html" class="btn btn-outline-primary btn-sm mt-1">Reserve Room</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="mt-3"></div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/footer.js"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.card {
+  border-radius: 15px;
+  background-color: #f0ad4e !important;
+}
+.card:hover {
+  background-color: orange !important;
+}
+#rooms_heading:after {
+  content: "";
+  width: 75px;
+  height: 5px;
+  background-color: orange;
+  left: 0;
+  margin: 0px auto;
+  position: relative;
+  display: block;
+  top: 5px;
+}

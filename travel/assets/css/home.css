@@ -1,0 +1,48 @@
+.carousel-caption p {
+  text-shadow: 0px 0px 10px black;
+}
+.gotoservices {
+  animation: example 2s infinite;
+}
+@keyframes example {
+  0%,
+  100% {
+    margin-bottom: 0px;
+  }
+  20% {
+    margin-bottom: 20px;
+  }
+  40% {
+    margin-bottom: 0px;
+  }
+  60% {
+    margin-bottom: 10px;
+  }
+}
+
+/* Rooms */
+#home-rooms > #tns1-ow > button {
+  display: none !important;
+}
+
+#services_heading:after,
+#home-rooms_heading:after {
+  content: "";
+  width: 75px;
+  height: 5px;
+  background-color: orange;
+  left: 0;
+  margin: 0px auto;
+  position: relative;
+  display: block;
+  top: 5px;
+}
+
+/* landing */
+.carousel-caption {
+  min-width: 75% !important;
+  min-height: 75% !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}

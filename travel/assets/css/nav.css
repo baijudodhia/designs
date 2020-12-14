@@ -1,0 +1,14 @@
+.navbar-toggler {
+  border: none !important;
+}
+.nav-item > .active {
+  color: orange !important;
+}
+.nav-item > a {
+  color: white !important;
+}
+@media only screen and (min-width: 361px) {
+  #book-now {
+      display:none;
+  }
+}
