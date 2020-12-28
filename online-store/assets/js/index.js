@@ -1,5 +1,4 @@
 function FilterCategory(category) {
-    console.log(category);
     let products = document.getElementById("products").children;
     let btn_filter_all = document.getElementById("btn-filter-all");
     let btn_filter_phone = document.getElementById("btn-filter-phone");
@@ -15,7 +14,6 @@ function FilterCategory(category) {
             ele.classList.remove("product_visible");
             ele.classList.remove("product_hidden");
             ele.className += " product_visible ";
-            console.log(ele.className + " - show");
         });
     } else {
         if (category == 'phone') {
@@ -42,12 +40,10 @@ function FilterCategory(category) {
                 ele.classList.remove("product_visible");
                 ele.classList.remove("product_hidden");
                 ele.className += " product_hidden ";
-                console.log(ele.className + " - hide");
             } else {
                 ele.classList.remove("product_visible");
                 ele.classList.remove("product_hidden");
                 ele.className += " product_visible ";
-                console.log(ele.className + " - show");
             }
         });
     }
