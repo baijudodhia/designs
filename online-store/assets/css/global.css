@@ -10,6 +10,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: gray;
 }
+a:hover {
+  text-decoration: none;
+}
 .bg-light {
   background-color: white !important;
 }
@@ -36,6 +39,27 @@ nav {
 }
 .spacing {
   height: 57px;
+}
+.card {
+  border: none;
+  box-shadow: 0px 0px 12px -6px gray;
+}
+.product-title,
+.product-price {
+  font-size: 22px;
+  margin: 4px 0px;
+}
+.product-description-preview {
+  font-size: 18px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.card-body {
+  border-top: 0.25px dotted lightgray;
+  padding: 8px 16px 16px;
+}
+.card-img-top {
+  padding: 4px;
 }
 footer {
   border-top: 0.5px solid whitesmoke;
