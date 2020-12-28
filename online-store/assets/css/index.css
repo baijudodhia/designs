@@ -11,5 +11,89 @@
   top: 5px;
 }
 
+.carousel-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.carousel-text {
+  text-align: left;
+  font-size: 48px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 6%;
+}
+.btn-filter-active {
+  background-color: green !important;
+}
+.btn-filter {
+  width: 100%;
+  border: none;
+  background-color: unset;
+  font-size: large;
+  text-align: left;
+}
+.btn-filter:focus,
+.btn-filter:active {
+  outline: none !important;
+  border: none !important;
+}
+
+.product_hidden {
+  display: none;
+}
+#left_Sidebar {
+  border-right: 0.25px solid lightgray;
+}
+#filter {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  border: none;
+  box-shadow: 0px 0px 12px -6px gray;
+}
+.product-title,
+.product-price {
+  font-size: 22px;
+  margin: 4px 0px;
+}
+.product-description-preview {
+  font-size: 18px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.card-body {
+  padding: 8px 16px 16px;
+}
+.card-img-top {
+  padding: 4px;
+}
+
 @media only screen and (max-width: 992px) {
+  .carousel-container {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 16px;
+    padding-bottom: 0px;
+  }
+  .carousel-text {
+    text-align: center;
+    font-size: xx-large;
+  }
+  #left_Sidebar {
+    border-right: none;
+    text-align: center;
+    padding-top: 8px;
+  }
+  #filter {
+    display: flex;
+    flex-direction: row;
+  }
+  #filter > button {
+    text-align: center;
+  }
 }

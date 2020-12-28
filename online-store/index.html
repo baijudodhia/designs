@@ -32,7 +32,9 @@
 
     <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="stylesheet" href="./assets/css/global.css" />
-    <title>The Tech Blog</title>
+    <title>The Tech Store</title>
+
+    <script src="assets/js/index.js"></script>
 </head>
 
 <body>
@@ -72,6 +74,595 @@
         </nav>
     </div>
     <div class="spacing"></div>
+    <div class="carousel-container my-3">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="wrapper">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <img src="./assets/img/landing-page/surface_studio.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 my-auto py-3">
+                                <div class="carousel-text">
+                                    <b>Surface</b>
+                                </div>
+                                <div class="carousel-text">
+                                    <b>Studio</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="wrapper">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <img src="./assets/img/landing-page/nokia_5.3-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 my-auto py-3">
+                                <div class="carousel-text">
+                                    <b>Nokia 5.3</b>
+                                </div>
+                                <div class="carousel-text">
+                                    <b>Phone</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="wrapper">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <img src="./assets/img/landing-page/asus_laptop.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 my-auto py-3">
+                                <div class="carousel-text">
+                                    <b>Asus</b>
+                                </div>
+                                <div class="carousel-text">
+                                    <b>Laptop</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <i class="fa fa-arrow-left text-dark" aria-hidden="true"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <i class="fa fa-arrow-right text-dark" aria-hidden="true"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="wrapper border-top">
+        <div class="row mx-auto p-0">
+            <div class="col-lg-2 px-0" id="left_Sidebar">
+                <div class="h4 py-3 px-2 text-center my-0"><b>Categories</b></div>
+                <div id="filter">
+                    <button id="btn-filter-all" class="btn-filter py-2 btn-filter-active"
+                        onclick="FilterCategory('all')">All</button>
+                    <button id="btn-filter-phone" class="btn-filter py-2"
+                        onclick="FilterCategory('phone')">Phone</button>
+                    <button id="btn-filter-laptop" class="btn-filter py-2"
+                        onclick="FilterCategory('laptop')">Laptop</button>
+                    <button id="btn-filter-desktop" class="btn-filter py-2"
+                        onclick="FilterCategory('desktop')">Desktop</button>
+                </div>
+            </div>
+            <div class="col-lg-10" id="right_Sidebar">
+                <div class="row pt-3" id="products">
+                    <div class="phone col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/phone/apple_iphone_11-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Apple iPhone 11</div>
+                                <div class="product-price"><b>Rs.&nbsp;51,999</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="laptop col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/laptop/asus_laptop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Asus VivoBook Laptop</div>
+                                <div class="product-price"><b>Rs.&nbsp;33,990</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/desktop/dell_desktop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Dell Inspiron Desktop</div>
+                                <div class="product-price"><b>Rs.&nbsp;37,999</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="laptop col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/laptop/lenovo_ideapad.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Lenovo Ideapad</div>
+                                <div class="product-price"><b>Rs.&nbsp;24,499</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="laptop col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/laptop/dell_laptop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Dell Laptop</div>
+                                <div class="product-price"><b>Rs.&nbsp;27,990</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/phone/nokia_5.3-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Nokia 5.3</div>
+                                <div class="product-price"><b>Rs.&nbsp;12,499</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/desktop/lenovo_desktop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Lenovo IdeaCenter A340 Desktop</div>
+                                <div class="product-price"><b>Rs.&nbsp;43,990</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/phone/samsung_galaxy_m51-3.jpg" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Samsung Galaxy M51</div>
+                                <div class="product-price"><b>Rs.&nbsp;22,999</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/phone/google_pixel_5-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Google Pixel 5</div>
+                                <div class="product-price"><b>Rs.&nbsp;71,999</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="laptop col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/laptop/macbook_laptop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Macbook</div>
+                                <div class="product-price"><b>Rs.&nbsp;1,18,990</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/desktop/hp_desktop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">HP Desktop</div>
+                                <div class="product-price"><b>Rs.&nbsp;37,490</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/desktop/surface_desktop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Surface Studio 2</div>
+                                <div class="product-price"><b>Rs.&nbsp;4,50,000</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/phone/poco_x2_matrix-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Poco X2 Matrix</div>
+                                <div class="product-price"><b>Rs.&nbsp;15,999</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/phone/apple_iphone_7-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Apple iPhone 7</div>
+                                <div class="product-price"><b>Rs.&nbsp;23,990</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="laptop col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/laptop/surface_book_laptop.jpg" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Surface Book</div>
+                                <div class="product-price"><b>Rs.&nbsp;1,29,500</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/desktop/asus_desktop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Asus Desktop</div>
+                                <div class="product-price"><b>Rs.&nbsp;26,700</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="laptop col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/laptop/mi_notebook.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Mi Notebook</div>
+                                <div class="product-price"><b>Rs.&nbsp;47.999</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/desktop/imac_desktop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">iMac</div>
+                                <div class="product-price"><b>Rs.&nbsp;1,69,900</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/phone/oneplus_8t_5g-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">Oneplus 8T</div>
+                                <div class="product-price"><b>Rs.&nbsp;45,999</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="laptop col-lg-4 my-2">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./assets/img/product/laptop/msi_laptop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="product-title">MSI GL65 Leopard Laptop</div>
+                                <div class="product-price"><b>Rs.&nbsp;67,990</b></div>
+                                <div class="product-description-preview">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing.</div>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span class="pl-2">View</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="pl-2">Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="bg-light py-3 mt-3">
         <div class="d-flex flex-row justify-content-center py-2 mx-auto">
