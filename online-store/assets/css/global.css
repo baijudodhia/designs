@@ -1,0 +1,42 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+.bg-light {
+  background-color: white !important;
+}
+nav {
+  background-color: white;
+  border-bottom: 0.5px solid whitesmoke;
+}
+.navbar-toggler {
+  padding: 4px;
+  border: none !important;
+  outline: none !important;
+}
+.navbar-toggler:active {
+  outline: none !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  text-shadow: 0px 0px 5px rgb(100, 255, 115);
+}
+.navbar-light .navbar-nav .active > .nav-link {
+  text-shadow: 0px 0px 5px rgb(100, 255, 115);
+}
+.spacing {
+  height: 57px;
+}
+footer {
+  border-top: 0.5px solid whitesmoke;
+}

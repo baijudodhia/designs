@@ -1,0 +1,15 @@
+.underline-below:after {
+  content: "";
+  width: 65px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: rgb(100, 255, 115);
+  left: 0;
+  margin: 0px auto;
+  position: relative;
+  display: block;
+  top: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+}
