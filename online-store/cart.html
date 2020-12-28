@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./assets/css/cart.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <title>The Tech Store</title>
+</head>
+
+<body style="min-height: 100vh;" class="d-flex flex-column justify-content-between">
+    <div class="fixed-top w-100 m-0">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSportedContent"
+                    aria-controls="navbarSportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-flex flex-row mx-auto pl-1" style="padding-right:3.6rem;">
+                    <div class="pr-2">
+                        <img src="./assets/img/logo/logo.png" alt="The Tech Blog Logo" width="24" height="24" />
+                    </div>
+                    <div class="my-auto">
+                        <a href="./index.html"><span style="color:black;font-size: 20px;"><b>The Tech
+                                    Store</b></span></a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./cart.html">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="cursor:pointer;">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="cursor:pointer;">Login/Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="spacing"></div>
+
+    <div class="container py-3 flex-grow-1">
+        <div class="h3 text-center">Cart details</div>
+        <div class="table-responsive-lg">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Price*</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Samsung M51</td>
+                        <td>Phone</td>
+                        <td>22999</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Asus Desktop</td>
+                        <td>Desktop</td>
+                        <td>26700</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Dell Laptop</td>
+                        <td>Laptop</td>
+                        <td>27990</td>
+                    </tr>
+                    <tr class="border-bottom">
+                        <th colspan="3">Total (in Rupees)</th>
+                        <td><b>77698</b></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-center py-1">
+                <button class="btn btn-primary">Pay&nbsp;&nbsp;<b>Rs. 77698</b></button>
+            </div>
+        </div>
+        <div class="text-danger py-1 my-0">* All prices are in Rupees.</div>
+    </div>
+
+    <footer class="bg-light py-3">
+        <div class="d-flex flex-row justify-content-center py-2 mx-auto">
+            <div class="my-auto">
+                <i class="fa fa-facebook-square mr-3" style="font-size: 24px;" aria-hidden="true"></i>
+            </div>
+            <div class="my-auto">
+                <i class="fa fa-instagram mr-3" style="font-size: 24px;" aria-hidden="true"></i>
+            </div>
+            <div class="my-auto">
+                <i class="fa fa-twitter mr-3" style="font-size: 24px;" aria-hidden="true"></i>
+            </div>
+            <div class="my-auto">
+                <i class="fa fa-youtube-play mr-3" style="font-size: 24px;" aria-hidden="true"></i>
+            </div>
+            <div class="my-auto">
+                <i class="fa fa-linkedin-square mr-3" style="font-size: 24px;" aria-hidden="true"></i>
+            </div>
+            <div class="my-auto">
+                <i class="fa fa-pinterest-square" style="font-size: 24px;" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="container text-center h5 py-2 mx-auto my-0">
+            <b>&copy; The Tech Store</b>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
