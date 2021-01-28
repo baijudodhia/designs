@@ -1,0 +1,40 @@
+#videoBG {
+  position: fixed;
+  left: 0%;
+  top: 50%;
+  transform: translate(-0%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+#meeting-code-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0px 0px 20px -8px #24d37f;
+  padding: 16px;
+  border-radius: 7px;
+  width: 90%;
+  max-width: 450px;
+  height: 60px;
+}
+#meeting-code-container input {
+  width: 100%;
+  border: none;
+  font-size: larger;
+}
+#meeting-code-container input:focus {
+  border: none;
+  outline: none;
+}
+#meeting-code-container .fa {
+  font-size: 20px;
+  margin: auto 4px;
+  cursor: pointer;
+  color: #24d37f;
+}
+#meeting-code-container .fa:active {
+  transform: scale(0.85);
+}

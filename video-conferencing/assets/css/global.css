@@ -1,0 +1,45 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  height: 60px;
+  padding: 8px 16px;
+}
+.nav-brand {
+  height: 100%;
+}
+#nav-brand-logo {
+  height: 44px;
+  margin-right: 6px;
+}
+#nav-brand-text {
+  text-shadow: 0px 0px 10px white;
+  font-size: larger;
+}
+.nav-items {
+  margin-left: auto;
+}
+.nav-items i {
+  font-size: 24px;
+  cursor: pointer;
+  color: #24d37f;
+  text-shadow: 0px 0px 10px black;
+}
+.spacing {
+  height: 60px;
+}
+footer {
+  height: 56px;
+  color: white;
+  text-shadow: 0px 0px 20px black;
+  padding: 16px 16px;
+}
+footer .fa {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 0px 8px;
+}
+footer .fa:hover {
+  color: white;
+  text-shadow: 0px 0px 20px #24d37f;
+}
