@@ -31,10 +31,15 @@
   display: flex;
   align-self: stretch;
   width: 100%;
-  aspect-ratio: 21/9;
+  aspect-ratio: 24/9;
   transition: 0.2s linear !important;
 }
 @media screen and (max-width: 1080px) {
+  .carousel-item.carousel-active {
+    aspect-ratio: 21/9;
+  }
+}
+@media screen and (max-width: 900px) {
   .carousel-item.carousel-active {
     aspect-ratio: 16/9;
   }
