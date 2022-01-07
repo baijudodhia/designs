@@ -3,20 +3,140 @@
   padding: 0px;
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+  padding: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: lightgrey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+
+#title-container {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#title {
+  font-size: 64px;
+  transform: rotate(-15deg);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  animation: title 4s infinite;
+  color: tomato;
+  width: fit-content;
+  transition: linear;
+  text-decoration: underline;
+  text-underline-position: below;
+  text-underline-offset: 10px;
+}
+@keyframes title {
+  0% {
+    color: tomato;
+  }
+  45% {
+    color: lightgreen;
+  }
+  90% {
+    color: orange;
+  }
+  100% {
+    color: tomato;
+  }
+}
+
+#fullscreen {
+  display: none;
+}
+#fullscreen.show {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+#fullscreen-download {
+  z-index: 99999999;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px -5px black;
+  font-weight: bold;
+}
+#fullscreen-close {
+  z-index: 99999999;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px -5px black;
+  font-weight: bold;
+}
+#fullscreen-img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  background-color: hsl(0, 0%, 90%);
+  transition: background-color 300ms;
+}
 .carousel-wrapper {
   width: 100%;
-  overflow-x: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
 .carousel {
   display: flex;
   flex-direction: row;
   flex: 1 1 0;
   width: 100%;
+  height: 100%;
   row-gap: 10px;
   align-items: center;
   align-content: center;
   flex-wrap: nowrap;
-  padding: 10px;
+  position: relative;
 }
 .carousel::-webkit-scrollbar {
   display: none;
@@ -31,7 +151,7 @@
   display: flex;
   align-self: stretch;
   width: 100%;
-  aspect-ratio: 24/9;
+  aspect-ratio: 21/9;
   transition: 0.2s linear !important;
 }
 @media screen and (max-width: 1080px) {
@@ -56,14 +176,39 @@
 }
 .carousel-photo {
   width: 100%;
-  border-radius: 10px;
 }
 .carousel-shadow {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 10px;
   box-shadow: inset 0px 0px 100px black;
+}
+.carousel-spinner-container {
+  display: none;
+}
+.carousel-spinner-container[data-show="true"] {
+  width: calc(100%);
+  height: calc(100%);
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  box-shadow: inset 0px 0px 100px black;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.carousel-spinner {
+  width: 30px;
+  height: 30px;
+  z-index: 9999999999;
+  border-top: 2px solid lightgray;
+  border-right: 2px solid #0f4bee;
+  border-bottom: 2px solid #0f4bee;
+  border-left: 2px solid #0f4bee;
+  border-radius: 50%;
+  transition: ease-in-out;
+  animation: spinner 1s infinite;
 }
 .carousel-button-prev,
 .carousel-button-next {
@@ -95,7 +240,7 @@
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   left: calc(100%);
-  transform: translate(calc(-100% - 10px), 0px);
+  transform: translate(calc(-100%), 0px);
 }
 .carousel-dots-container {
   display: flex;
@@ -117,30 +262,6 @@
 .carousel-dots.dot-active {
   background-color: white;
   transition: 0.5s linear;
-}
-
-#title {
-  text-align: center;
-  font-size: 64px;
-  /* transform: translateY(50px); */
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  animation: title 4s infinite;
-  color: tomato;
-  transition: linear;
-}
-@keyframes title {
-  0% {
-    color: tomato;
-  }
-  45% {
-    color: lightgreen;
-  }
-  90% {
-    color: orange;
-  }
-  100% {
-    color: tomato;
-  }
 }
 
 #gallery {
@@ -174,11 +295,35 @@
   width: 100%;
   border-radius: 10px;
 }
+.gallery-remove {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  top: 15px;
+  right: 15px;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px -5px black;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
 .gallery-shadow {
   width: 100%;
   height: 100%;
   position: absolute;
   border-radius: 10px;
+  z-index: 1;
   box-shadow: inset 0px 0px 100px black;
 }
 @media screen and (max-width: 1080px) {
@@ -221,8 +366,8 @@
   justify-content: center;
   align-items: center;
   column-gap: 10px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: lightgray;
   padding: 10px;
