@@ -1,0 +1,133 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  padding: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgrey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: stretch;
+  row-gap: 15px;
+  column-gap: 15px;
+  padding: 15px 15px calc(15px + 50px) 15px;
+  width: 100vw;
+  height: 100vh;
+  flex-grow: 1;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 5px;
+  width: fit-content;
+  height: auto;
+  padding: 10px;
+}
+
+.icon {
+  margin: 0px auto;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+}
+
+.label {
+  color: white;
+}
+
+#search-container {
+  position: relative;
+}
+
+#search {
+  transition: 0.05s linear;
+  position: absolute;
+  width: 500px;
+  max-width: 500px;
+  height: 400px;
+  max-height: 400px;
+  z-index: 1;
+  bottom: calc(100% + 20px);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px -12px black;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  transform-origin: bottom left;
+  transform: scale(0);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  padding: 10px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  box-shadow: 0px 0px 20px -12px black;
+}
+
+#search-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.15s linear infinite;
+}
+
+#search-btn:hover {
+  transform: scale(1.1);
+}
+
+#search-btn:active {
+  transform: scale(0.95);
+}
